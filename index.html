@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>NEVERDIE INTERACTIVE</title>
 
-    <!-- Font Awesome pour les logos -->
+    <!-- Icône Discord -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <style>
@@ -33,19 +33,27 @@
         .icons {
             display: flex;
             gap: 40px;
+            align-items: center;
         }
 
         .icons a {
-            color: white;
-            font-size: 60px;
-            transition: transform 0.2s ease, text-shadow 0.2s ease;
+            transition: transform 0.2s ease, filter 0.2s ease;
         }
 
         .icons a:hover {
             transform: scale(1.2);
-            text-shadow:
-                0 0 10px #fff,
-                0 0 20px #fff;
+            filter: drop-shadow(0 0 10px white);
+        }
+
+        .icons i {
+            color: white;
+            font-size: 60px;
+        }
+
+        .roblox-logo {
+            width: 60px;
+            height: 60px;
+            filter: brightness(0) invert(1);
         }
     </style>
 </head>
@@ -59,9 +67,12 @@
             <i class="fa-brands fa-discord"></i>
         </a>
 
-        <!-- Roblox -->
+        <!-- Roblox (image officielle) -->
         <a href="https://www.roblox.com/fr/games/109397169461300/SNIPER-DUELS" target="_blank">
-            <i class="fa-brands fa-roblox"></i>
+            <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Roblox_Logo_2022.svg" 
+                alt="Roblox"
+                class="roblox-logo">
         </a>
     </div>
 
